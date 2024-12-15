@@ -1,0 +1,251 @@
+Debug: ""
+Debug: ""
+Debug: ""
+Debug: ""
+Debug: ""
+Debug: ""
+Debug: "funny Product"
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'qt_sql_default_connection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Debug: "3"
+Debug: "4"
+Debug: "5"
+Debug: "6"
+Debug: "7"
+Debug: "8"
+Debug: "9"
+Debug: "10"
+Debug: "11"
+Debug: "12"
+Debug: "13"
+Debug: "123"
+Debug: "124"
+Debug: "125"
+Debug: "141"
+Debug: "142"
+Debug: "143"
+Debug: "144"
+Debug: ""
+Debug: ""
+Debug: "21212"
+Debug: "21212"
+Debug: "21212"
+Debug: "21212"
+Debug: "21212"
+Debug: "21212"
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'qt_sql_default_connection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Debug: "21212"
+Debug: "21212"
+Debug: "21212"
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'qt_sql_default_connection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Debug: "21212"
+Debug: Проверка существования магазина с именем: "sad"
+Debug: Добавление в базу данный специализации с именем: "qwerty"
+Debug: Поис в базе данных специализации: "qwerty"
+Debug: Добавление в базу данный магазина с именем: "sad"
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'qt_sql_default_connection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Debug: Проверка существования магазина с именем: "ddsadas"
+Debug: Добавление в базу данный специализации с именем: "qwerty1"
+Debug: Поис в базе данных специализации: "qwerty1"
+Debug: Добавление в базу данный магазина с именем: "ddsadas"
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'qt_sql_default_connection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Debug: Проверка существования магазина с именем: "sdas"
+Debug: Добавление в базу данный специализации с именем: "qwerty2"
+Debug: Поис в базе данных специализации: "qwerty2"
+Debug: Добавление в базу данный магазина с именем: "sdas"
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'qt_sql_default_connection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'main_connection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'main_connection', old connection removed.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'qt_sql_default_connection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'main_connection', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'main_connection', old connection removed.
+Debug: Проверка существования магазина с именем: "Колхоз"
+Debug: Добавление в базу данных магазина с именем: "Колхоз"
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'qt_sql_default_connection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'main_window_conection' is still in use, all queries will cease to work.
+Debug: Проверка существования магазина с именем: "Колхоз"
+Warning: Ошибка: Данное название уже занято
+Warning: Ошибка: адрес не может быть пустым
+Warning: Ошибка: директор не может быть пустым
+Warning: Ошибка: специальность не может быть пустой
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'main_window_conection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'main_window_conection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'qt_sql_default_connection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'main_window_conection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'qt_sql_default_connection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'main_window_conection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'qt_sql_default_connection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'main_window_conection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'main_window_conection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'main_window_conection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'qt_sql_default_connection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'mainConnection1', old connection removed.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'qt_sql_default_connection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Debug: 1
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'qt_sql_default_connection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'main_window_conection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'main_window_conection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'qt_sql_default_connection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'main_window_conection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'main_window_conection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'main_window_conection' is still in use, all queries will cease to work.
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_pushButton_clicked()
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'main_window_conection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'main_window_conection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'main_window_conection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'mainConnection1', old connection removed.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'main_window_conection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'main_window_conection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Debug: QList("238", "239", "237", "246", "249", "249", "247", "250")
+Debug: QList("238", "239", "237", "246", "249", "249", "247")
+Debug: QList("238", "239", "237", "246", "249", "249")
+Debug: QList("238", "239", "237", "246", "249")
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'mainConnection1', old connection removed.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'main_window_conection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'mainConnection1', old connection removed.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'main_window_conection' is still in use, all queries will cease to work.
+Debug: false
+Debug: "255"
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'mainConnection1', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'mainConnection1', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'mainConnection1', old connection removed.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'main_window_conection' is still in use, all queries will cease to work.
+Debug: QList("255", "256")
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'mainConnection1', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'mainConnection1', old connection removed.
+Debug: false
+Debug: "257"
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'mainConnection1', old connection removed.
+Debug: QList("255", "257")
+Debug: false
+Debug: "258"
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'mainConnection1', old connection removed.
+Debug: QList("255", "258")
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'mainConnection1', old connection removed.
+Debug: QList("255", "259")
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'mainConnection1', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'mainConnection1', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'qt_sql_default_connection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'qt_sql_default_connection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'qt_sql_default_connection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Debug: 1
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'main_window_conection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'qt_sql_default_connection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'qt_sql_default_connection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'qt_sql_default_connection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Debug: Проверка существования магазина с именем: "фффффффффф"
+Debug: Добавление в базу данных магазина с именем: "фффффффффф"
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'qt_sql_default_connection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'qt_sql_default_connection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'qt_sql_default_connection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'main_window_conection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'qt_sql_default_connection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'qt_sql_default_connection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'main_window_conection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'qt_sql_default_connection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'main_window_conection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'main_window_conection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'main_window_conection' is still in use, all queries will cease to work.
+Debug: Проверка существования магазина с именем: "Продуктовый 24/7"
+Debug: Добавление в базу данных магазина с именем: "Продуктовый 24/7"
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_SaveButton_clicked()
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'qt_sql_default_connection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'qt_sql_default_connection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Debug: 1
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'main_window_conection' is still in use, all queries will cease to work.
+Debug: Проверка существования магазина с именем: "dasd"
+Debug: Добавление в базу данных магазина с именем: "dasd"
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_SaveButton_clicked()
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'main_window_conection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Debug: Проверка существования магазина с именем: "sasd"
+Debug: Добавление в базу данных магазина с именем: "sasd"
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_SaveButton_clicked()
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'main_window_conection' is still in use, all queries will cease to work.
+Debug: Проверка существования магазина с именем: "sad"
+Debug: Добавление в базу данных магазина с именем: "sad"
+Warning: QMetaObject::connectSlotsByName: No matching signal for on_SaveButton_clicked()
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'main_window_conection' is still in use, all queries will cease to work.
+Debug: Проверка существования магазина с именем: "dsds"
+Debug: Добавление в базу данных магазина с именем: "dsds"
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'qt_sql_default_connection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'qt_sql_default_connection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Debug: 1
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Debug: 1
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'main_connection', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'qt_sql_default_connection' is still in use, all queries will cease to work.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Warning: QSqlDatabasePrivate::addDatabase: duplicate connection name 'qt_sql_default_connection', old connection removed.
+Debug: false
+Warning: QSqlDatabasePrivate::removeDatabase: connection 'main_window_conection' is still in use, all queries will cease to work.

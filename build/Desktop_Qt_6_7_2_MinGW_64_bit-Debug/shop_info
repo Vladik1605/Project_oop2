@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shop>
+    <id>3</id>
+    <name>funny Product</name>
+    <address>Ломоносовская 5</address>
+    <director>Иванов Иван Иванович</director>
+    <specialization>Продукты</specialization>
+</shop>
+<shop>
+    <id>4</id>
+    <name>Product 24/7</name>
+    <address>Тетюшева 15</address>
+    <director>Петров Петр Иванович</director>
+    <specialization>Продукты</specialization>
+</shop>
+<shop>
+    <id>5</id>
+    <name>Бытовая химия</name>
+    <address>Проспект большевиков 17</address>
+    <director>Грачев Петр Васильевич</director>
+    <specialization>Бытовая химия</specialization>
+</shop>
+<shop>
+    <id>6</id>
+    <name>Афродита</name>
+    <address>Локомотивная 5</address>
+    <director>Гадиева Алия Ильдаровна</director>
+    <specialization>Одежда</specialization>
+</shop>
+<shop>
+    <id>7</id>
+    <name>Спортмастер</name>
+    <address>Зябликова 12</address>
+    <director>Зверев Иван Иванович</director>
+    <specialization>Спорт. инвентарь</specialization>
+</shop>
+<shop>
+    <id>8</id>
+    <name>Nike pro</name>
+    <address>Шувалова 112А</address>
+    <director>Сергеев Владимир Никитич</director>
+    <specialization>Спорт. инвентарь</specialization>
+</shop>
+<shop>
+    <id>9</id>
+    <name>Пятерочка</name>
+    <address>Зайцева 7</address>
+    <director>Гаврилов Дмитрий Иванович</director>
+    <specialization>Продукты</specialization>
+</shop>
+<shop>
+    <id>10</id>
+    <name>Магнит</name>
+    <address>Думская 19</address>
+    <director>Петров Петр Иванович</director>
+    <specialization>Продукты</specialization>
+</shop>
+<shop>
+    <id>11</id>
+    <name>H&amp;M</name>
+    <address>Артема 144</address>
+    <director>Ямщиков Алексей Владимирович</director>
+    <specialization>Одежда</specialization>
+</shop>
+<shop>
+    <id>12</id>
+    <name>Bershka</name>
+    <address>ТЦ Галерея 2 этаж</address>
+    <director>Зубенко Михаил Петрович</director>
+    <specialization>Одежда</specialization>
+</shop>
+<shop>
+    <id>13</id>
+    <name>Fix price</name>
+    <address>Стрелецкая 776</address>
+    <director>Своров Михаил Дмитриевич</director>
+    <specialization>Товары для дома</specialization>
+</shop>

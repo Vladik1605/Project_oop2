@@ -1,0 +1,15 @@
+debug/AddDirector.o
+debug/addingshop.o
+debug/addingworker.o
+debug/filesaving.o
+debug/main.o
+debug/mainwindow.o
+debug/products.o
+debug/shop_information.o
+debug/moc_AddDirector.o
+debug/moc_addingshop.o
+debug/moc_addingworker.o
+debug/moc_filesaving.o
+debug/moc_mainwindow.o
+debug/moc_products.o
+debug/moc_shop_information.o
