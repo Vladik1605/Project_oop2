@@ -1,0 +1,180 @@
+\doxysection{Exceptions.\+h}
+\hypertarget{_exceptions_8h_source}{}\label{_exceptions_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ EXCEPTIONS\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ EXCEPTIONS\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QFile>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QException>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QLabel>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <QLineEdit>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <QPropertyAnimation>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <QGraphicsEffect>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <QSequentialAnimationGroup>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <QMessageBox>}}
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_my_ex}{MyEx}}:\ \textcolor{keyword}{public}\ QException\{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{class_my_ex}{MyEx}}(QMap<QLabel*,\ QString>\ errors\_h)\{}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ errors=errors\_h;}
+\DoxyCodeLine{00018\ \ \ \ \ \}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ ShowError()\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ [key,\ value]\ :\ errors.toStdMap())\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ key-\/>setText(value);}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ key-\/>setStyleSheet(\textcolor{stringliteral}{"{}color:\ red;"{}});}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ key-\/>update();}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Создаем\ группу\ анимации}}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ group\ =\ \textcolor{keyword}{new}\ QSequentialAnimationGroup(key);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 5;\ ++i)\ \{\ \textcolor{comment}{//\ Количество\ дрожаний}}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ animation\ =\ \textcolor{keyword}{new}\ QPropertyAnimation(key,\ \textcolor{stringliteral}{"{}pos"{}});}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ animation-\/>setDuration(100);\ \textcolor{comment}{//\ Длительность\ одного\ дрожания}}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ animation-\/>setStartValue(key-\/>pos());}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ animation-\/>setEndValue(QPoint(key-\/>pos().x()\ +\ (i\ \%\ 2\ ==\ 0\ ?\ 5\ :\ -\/5),\ key-\/>pos().y()));\ \textcolor{comment}{//\ Сдвиг\ влево\ и\ вправо}}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ group-\/>addAnimation(animation);}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Устанавливаем\ финальную\ позицию}}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ finalAnimation\ =\ \textcolor{keyword}{new}\ QPropertyAnimation(key,\ \textcolor{stringliteral}{"{}pos"{}});}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ finalAnimation-\/>setDuration(100);\ \textcolor{comment}{//\ Длительность\ финальной\ анимации}}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ finalAnimation-\/>setStartValue(key-\/>pos());}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ finalAnimation-\/>setEndValue(key-\/>pos());\ \textcolor{comment}{//\ Возвращаемся\ в\ исходную\ позицию}}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ group-\/>addAnimation(finalAnimation);}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Убедимся,\ что\ группа\ анимаций\ не\ будет\ удалена\ сразу}}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ QSequentialAnimationGroup::connect(group,\ \&QSequentialAnimationGroup::finished,\ group,\ \&QObject::deleteLater);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Запускаем\ группу\ анимаций}}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ group-\/>start();}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00049\ \ \ \ \ \}}
+\DoxyCodeLine{00050\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00051\ \ \ \ \ QMap<QLabel*,\ QString>\ errors;}
+\DoxyCodeLine{00052\ \};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ex_correction}{ExCorrection}}:\ \textcolor{keyword}{public}\ QException\{}
+\DoxyCodeLine{00056\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00057\ \ \ \ \ \mbox{\hyperlink{class_ex_correction}{ExCorrection}}(\textcolor{keywordtype}{char}*\ ms)\{}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ masage=ms;}
+\DoxyCodeLine{00059\ \ \ \ \ \}}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ what()\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept}\ \textcolor{keyword}{override}\{}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ masage;}
+\DoxyCodeLine{00063\ \ \ \ \ \}}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{char}*\ masage;}
+\DoxyCodeLine{00068\ \};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ ValidatorName(QString*\ name)\ \{}
+\DoxyCodeLine{00074\ \ \ \ \ QString\ al=\textcolor{stringliteral}{"{}ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzАаБбВвГгДдЕёЁёЖжЗзИиЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщъыьЭэЮюЯя\ "{}};}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i=0;i<name-\/>length();i++)\{}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(al.indexOf(name-\/>at(i))==-\/1)\{}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \mbox{\hyperlink{class_ex_correction}{ExCorrection}}\{\textcolor{stringliteral}{"{}ФИО\ содержит\ недопустимые\ символы"{}}\};}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00079\ \ \ \ \ \}}
+\DoxyCodeLine{00080\ \}}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ ValidatorWorkAge(QString*\ age)\{}
+\DoxyCodeLine{00083\ \ \ \ \ QString\ al=\textcolor{stringliteral}{"{}0987654321"{}};}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i=0;i<age-\/>length();i++)\{}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(al.indexOf(age-\/>at(i))==-\/1)\{}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \mbox{\hyperlink{class_ex_correction}{ExCorrection}}\{\textcolor{stringliteral}{"{}Стаж\ работы\ содержит\ недопустимые\ символы"{}}\};}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00088\ \ \ \ \ \}}
+\DoxyCodeLine{00089\ \}}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ ValidatorSalary(QString*\ sal)\{}
+\DoxyCodeLine{00092\ \ \ \ \ QString\ al=\textcolor{stringliteral}{"{}0987654321"{}};}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i=0;i<sal-\/>length();i++)\{}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(al.indexOf(sal-\/>at(i))==-\/1)\{}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \mbox{\hyperlink{class_ex_correction}{ExCorrection}}\{\textcolor{stringliteral}{"{}Зар.плата\ может\ быть\ только\ целым\ числом"{}}\};}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00099\ \}}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ ValidatorPrice\_Stock\_Window(QString*\ sal)\{}
+\DoxyCodeLine{00102\ \ \ \ \ QString\ al=\textcolor{stringliteral}{"{}0987654321"{}};}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i=0;i<sal-\/>length();i++)\{}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(al.indexOf(sal-\/>at(i))==-\/1)\{}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \mbox{\hyperlink{class_ex_correction}{ExCorrection}}\{\textcolor{stringliteral}{"{}Может\ быть\ только\ целым\ числом!"{}}\};}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00108\ \ \ \ \ \}}
+\DoxyCodeLine{00109\ \}}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00111\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ ValidatorFile(QString\ file)\{}
+\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keywordflow}{if}(file==\textcolor{stringliteral}{"{}"{}})\{}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \mbox{\hyperlink{class_ex_correction}{ExCorrection}}\{\textcolor{stringliteral}{"{}Выберите\ папку!"{}}\};}
+\DoxyCodeLine{00114\ \ \ \ \ \}}
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keywordflow}{if}(!QFile::exists(file))\{}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \mbox{\hyperlink{class_ex_correction}{ExCorrection}}\{\textcolor{stringliteral}{"{}Такого\ пути\ нет!"{}}\};}
+\DoxyCodeLine{00117\ \ \ \ \ \}}
+\DoxyCodeLine{00118\ \}}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00120\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ ValidatorWards(QString*\ num)\{}
+\DoxyCodeLine{00121\ \ \ \ \ QString\ al=\textcolor{stringliteral}{"{}0987654321"{}};}
+\DoxyCodeLine{00122\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i=0;i<num-\/>length();i++)\{}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(al.indexOf(num-\/>at(i))==-\/1)\{}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \mbox{\hyperlink{class_ex_correction}{ExCorrection}}\{\textcolor{stringliteral}{"{}Количество\ может\ быть\ только\ целым\ числом"{}}\};}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00126\ \ \ \ \ \}}
+\DoxyCodeLine{00127\ \}}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00130\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_my_ex___prod}{MyEx\_Prod}}:\ \textcolor{keyword}{public}\ QException\{}
+\DoxyCodeLine{00131\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00133\ \ \ \ \ \mbox{\hyperlink{class_my_ex___prod}{MyEx\_Prod}}(QVector<QLineEdit*>\ errors\_h,\ QWidget*\ wind)\{}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ errors=errors\_h;}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ this-\/>wind=wind;}
+\DoxyCodeLine{00136\ \ \ \ \ \}}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00138\ \ \ \ \ \textcolor{keywordtype}{void}\ ShowError()\ \{}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i=0;i<errors.length();i++)\ \{}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \ \ \ \ errors[i]-\/>setStyleSheet(\textcolor{stringliteral}{"{}QLineEdit\ \{\ \ border:\ red;\ \ \}"{}});}
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \ \ \ \ errors[i]-\/>setStyleSheet(\textcolor{stringliteral}{"{}color:\ red;"{}});}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \ \ \ \ errors[i]-\/>update();}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Создаем\ группу\ анимации}}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ group\ =\ \textcolor{keyword}{new}\ QSequentialAnimationGroup(errors[i]);}
+\DoxyCodeLine{00146\ }
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 5;\ ++i)\ \{\ \textcolor{comment}{//\ Количество\ дрожаний}}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ animation\ =\ \textcolor{keyword}{new}\ QPropertyAnimation(errors[i],\ \textcolor{stringliteral}{"{}pos"{}});}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ animation-\/>setDuration(100);\ \textcolor{comment}{//\ Длительность\ одного\ дрожания}}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ animation-\/>setStartValue(errors[i]-\/>pos());}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ animation-\/>setEndValue(QPoint(errors[i]-\/>pos().x()\ +\ (i\ \%\ 2\ ==\ 0\ ?\ 5\ :\ -\/5),\ errors[i]-\/>pos().y()));\ \textcolor{comment}{//\ Сдвиг\ влево\ и\ вправо}}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ group-\/>addAnimation(animation);}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Устанавливаем\ финальную\ позицию}}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ finalAnimation\ =\ \textcolor{keyword}{new}\ QPropertyAnimation(errors[i],\ \textcolor{stringliteral}{"{}pos"{}});}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \ \ \ \ finalAnimation-\/>setDuration(100);\ \textcolor{comment}{//\ Длительность\ финальной\ анимации}}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \ \ \ \ finalAnimation-\/>setStartValue(errors[i]-\/>pos());}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \ \ \ \ finalAnimation-\/>setEndValue(errors[i]-\/>pos());\ \textcolor{comment}{//\ Возвращаемся\ в\ исходную\ позицию}}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \ \ \ \ group-\/>addAnimation(finalAnimation);}
+\DoxyCodeLine{00161\ }
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Убедимся,\ что\ группа\ анимаций\ не\ будет\ удалена\ сразу}}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \ \ \ \ QSequentialAnimationGroup::connect(group,\ \&QSequentialAnimationGroup::finished,\ group,\ \&QObject::deleteLater);}
+\DoxyCodeLine{00164\ }
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Запускаем\ группу\ анимаций}}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \ \ \ \ group-\/>start();}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ QMessageBox::warning(wind,\textcolor{stringliteral}{"{}Внимание!"{}},\ \textcolor{stringliteral}{"{}Это\ обязательное\ поле"{}},\ QMessageBox::Ok);}
+\DoxyCodeLine{00169\ }
+\DoxyCodeLine{00170\ \ \ \ \ \}}
+\DoxyCodeLine{00171\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00172\ \ \ \ \ QVector<QLineEdit*>\ errors;}
+\DoxyCodeLine{00173\ \ \ \ \ QWidget*\ wind;}
+\DoxyCodeLine{00174\ \};}
+\DoxyCodeLine{00175\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ EXCEPTIONS\_H}}
+
+\end{DoxyCode}

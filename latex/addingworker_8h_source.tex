@@ -1,0 +1,84 @@
+\doxysection{addingworker.\+h}
+\hypertarget{addingworker_8h_source}{}\label{addingworker_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ADDINGWORKER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ADDINGWORKER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QDialog>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QSqlDatabase>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QtSql/QSqlQuery>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QTimer>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}classes.h"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <QLineEdit>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_custom_line_edit}{CustomLineEdit}}\ :\ \textcolor{keyword}{public}\ QLineEdit\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_custom_line_edit}{CustomLineEdit}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr})\ :\ QLineEdit(parent),\ firstClick(\textcolor{keyword}{true})\ \{\}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ mousePressEvent(QMouseEvent\ *event)\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (firstClick)\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ setCursorPosition(0);}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ firstClick\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ QLineEdit::mousePressEvent(event);}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00025\ \ \ \ \ \}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{bool}\ firstClick;}
+\DoxyCodeLine{00029\ \};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00033\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_adding_worker}{AddingWorker}};}
+\DoxyCodeLine{00034\ \}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_adding_worker}{AddingWorker}}\ :\ \textcolor{keyword}{public}\ QDialog}
+\DoxyCodeLine{00037\ \{}
+\DoxyCodeLine{00038\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_adding_worker}{AddingWorker}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr},\ \mbox{\hyperlink{classshop}{shop}}*\ \mbox{\hyperlink{classshop}{shop}}=\textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{class_adding_worker}{\string~AddingWorker}}();}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_lineEdit\_editingFinished();}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_lineEdit\_2\_cursorPositionChanged(\textcolor{keywordtype}{int}\ arg1,\ \textcolor{keywordtype}{int}\ arg2);}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_lineEdit\_2\_editingFinished();}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_lineEdit\_3\_editingFinished();}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_lineEdit\_4\_editingFinished();}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_lineEdit\_5\_editingFinished();}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_lineEdit\_6\_cursorPositionChanged(\textcolor{keywordtype}{int}\ arg1,\ \textcolor{keywordtype}{int}\ arg2);}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_lineEdit\_6\_editingFinished();}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_lineEdit\_7\_editingFinished();}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_pushButton\_clicked();}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_pushButton\_2\_clicked();}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ fadeOut();}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ enableButton();}
+\DoxyCodeLine{00070\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00071\ \ \ \ \ Ui::AddingWorker\ *ui;}
+\DoxyCodeLine{00072\ \ \ \ \ QSqlDatabase\ db;}
+\DoxyCodeLine{00073\ \ \ \ \ \mbox{\hyperlink{classshop}{shop}}*\ shop1;}
+\DoxyCodeLine{00074\ \ \ \ \ \mbox{\hyperlink{class_asistant}{Asistant}}*\ worker;}
+\DoxyCodeLine{00075\ \ \ \ \ QTimer\ *timer;}
+\DoxyCodeLine{00076\ \ \ \ \ QTimer\ *buttonTimer;}
+\DoxyCodeLine{00077\ \};}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ADDINGWORKER\_H}}
+
+\end{DoxyCode}

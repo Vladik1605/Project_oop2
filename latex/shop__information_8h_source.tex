@@ -1,0 +1,50 @@
+\doxysection{shop\+\_\+information.\+h}
+\hypertarget{shop__information_8h_source}{}\label{shop__information_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ SHOP\_INFORMATION\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ SHOP\_INFORMATION\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QDialog>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QSqlDatabase>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QPushButton>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}classes.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}products.h"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_shop___information}{Shop\_Information}};}
+\DoxyCodeLine{00013\ \}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_shop___information}{Shop\_Information}}\ :\ \textcolor{keyword}{public}\ QDialog}
+\DoxyCodeLine{00016\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_shop___information}{Shop\_Information}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr},\ QString\ str=\textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_shop___information}{\string~Shop\_Information}}();}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_pushButton\_2\_clicked();}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_pushButton\_clicked();}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_lineEdit\_editingFinished();}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_lineEdit\_2\_editingFinished();}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_lineEdit\_3\_editingFinished();}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_lineEdit\_4\_editingFinished();}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00037\ \ \ \ \ Ui::Shop\_Information\ *ui;}
+\DoxyCodeLine{00038\ \ \ \ \ QSqlDatabase\ db;}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{bool}\ firstClick;}
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{classshop}{shop}}*\ shop\_inf;}
+\DoxyCodeLine{00041\ \ \ \ \ QString\ shop\_id;}
+\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{class_products}{Products}}*\ new\_products;}
+\DoxyCodeLine{00043\ \};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ SHOP\_INFORMATION\_H}}
+
+\end{DoxyCode}

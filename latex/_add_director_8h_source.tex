@@ -1,0 +1,64 @@
+\doxysection{Add\+Director.\+h}
+\hypertarget{_add_director_8h_source}{}\label{_add_director_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ADDDIRECTOR\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ADDDIRECTOR\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QDialog>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QSqlDatabase>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QtSql/QSqlQuery>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QTimer>}}
+\DoxyCodeLine{00008\ \textcolor{comment}{//\#include\ "{}addingworker.h"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}classes.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <QLineEdit>}}
+\DoxyCodeLine{00011\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_add_director}{AddDirector}};}
+\DoxyCodeLine{00013\ \}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_add_director}{AddDirector}}\ :\ \textcolor{keyword}{public}\ QDialog}
+\DoxyCodeLine{00020\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_add_director}{AddDirector}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr},\ \mbox{\hyperlink{classshop}{shop}}*\ \mbox{\hyperlink{classshop}{shop}}=\textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_add_director}{\string~AddDirector}}();}
+\DoxyCodeLine{00026\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_lineEdit\_editingFinished();}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_lineEdit\_2\_cursorPositionChanged(\textcolor{keywordtype}{int}\ arg1,\ \textcolor{keywordtype}{int}\ arg2);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_lineEdit\_2\_editingFinished();}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_lineEdit\_3\_editingFinished();}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_lineEdit\_4\_editingFinished();}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_lineEdit\_5\_editingFinished();}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_lineEdit\_6\_cursorPositionChanged(\textcolor{keywordtype}{int}\ arg1,\ \textcolor{keywordtype}{int}\ arg2);}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_lineEdit\_6\_editingFinished();}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_lineEdit\_7\_editingFinished();}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_pushButton\_clicked();}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ fadeOut();}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ enableButton();}
+\DoxyCodeLine{00050\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00051\ \ \ \ \ Ui::AddDirector\ *ui;}
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{classshop}{shop}}*\ shop1;}
+\DoxyCodeLine{00053\ \ \ \ \ QSqlDatabase\ db;}
+\DoxyCodeLine{00054\ \ \ \ \ QTimer\ *timer;}
+\DoxyCodeLine{00055\ \ \ \ \ QTimer\ *buttonTimer;}
+\DoxyCodeLine{00056\ \ \ \ \ \mbox{\hyperlink{class_director}{Director}}*\ worker;}
+\DoxyCodeLine{00057\ \};}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ADDDIRECTOR\_H}}
+
+\end{DoxyCode}

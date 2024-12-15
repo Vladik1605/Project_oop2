@@ -1,0 +1,45 @@
+\doxysection{products.\+h}
+\hypertarget{products_8h_source}{}\label{products_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PRODUCTS\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PRODUCTS\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QDialog>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}classes.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QSqlDatabase>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QLineEdit>}}
+\DoxyCodeLine{00008\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_products}{Products}};}
+\DoxyCodeLine{00010\ \}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_products}{Products}}\ :\ \textcolor{keyword}{public}\ QDialog}
+\DoxyCodeLine{00013\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_products}{Products}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr},\ QString\ shop\_id=\textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_products}{\string~Products}}();}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_pushButton\_clicked();}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_pushButton\_2\_clicked();}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00026\ \ \ \ \ Ui::Products\ *ui;}
+\DoxyCodeLine{00027\ \ \ \ \ QSqlDatabase\ db;}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{int}\ row;}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ loadData(QString\ shop\_id);}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{classproduct__list}{product\_list}}\ list;}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_product}{Product}}*\ prod;}
+\DoxyCodeLine{00032\ \ \ \ \ QLineEdit*\ ld3;}
+\DoxyCodeLine{00033\ \ \ \ \ QLineEdit*\ ld4;}
+\DoxyCodeLine{00034\ \ \ \ \ QLineEdit*\ ld5\ ;}
+\DoxyCodeLine{00035\ \ \ \ \ QLineEdit*\ ld6;}
+\DoxyCodeLine{00036\ \ \ \ \ QLineEdit*\ ld1;}
+\DoxyCodeLine{00037\ \ \ \ \ QLineEdit*\ ld2;}
+\DoxyCodeLine{00038\ \};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PRODUCTS\_H}}
+
+\end{DoxyCode}

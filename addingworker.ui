@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddingWorker</class>
+ <widget class="QDialog" name="AddingWorker">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>870</width>
+    <height>728</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>10000</width>
+    <height>10000</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>20</y>
+     <width>553</width>
+     <height>621</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>15</number>
+    </property>
+    <property name="topMargin">
+     <number>7</number>
+    </property>
+    <property name="rightMargin">
+     <number>15</number>
+    </property>
+    <property name="bottomMargin">
+     <number>10</number>
+    </property>
+    <property name="verticalSpacing">
+     <number>7</number>
+    </property>
+    <item row="12" column="0">
+     <widget class="CustomLineEdit" name="lineEdit_Salary"/>
+    </item>
+    <item row="13" column="0">
+     <widget class="QLabel" name="label_7">
+      <property name="text">
+       <string>Сектор магазина</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>Паспортные данные(серия и номер)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="0">
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>Рабочий стаж</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="CustomLineEdit" name="lineEdit_Birth"/>
+    </item>
+    <item row="11" column="0">
+     <widget class="QLabel" name="label_6">
+      <property name="text">
+       <string>Зар. плата</string>
+      </property>
+     </widget>
+    </item>
+    <item row="16" column="0" alignment="Qt::AlignmentFlag::AlignHCenter">
+     <widget class="QPushButton" name="SkipButton">
+      <property name="minimumSize">
+       <size>
+        <width>140</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Пропустить</string>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="14" column="0">
+     <widget class="CustomLineEdit" name="lineEdit_Sector"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Дата рождения</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>ФИО</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="CustomLineEdit" name="lineEdit_FIO"/>
+    </item>
+    <item row="8" column="0">
+     <widget class="CustomLineEdit" name="lineEdit_Pasport"/>
+    </item>
+    <item row="6" column="0">
+     <widget class="CustomLineEdit" name="lineEdit_Phone"/>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Номер телефона</string>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="0">
+     <widget class="CustomLineEdit" name="lineEdit_WA"/>
+    </item>
+    <item row="15" column="0" alignment="Qt::AlignmentFlag::AlignHCenter">
+     <widget class="QPushButton" name="SaveButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>140</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Сохранить</string>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" alignment="Qt::AlignmentFlag::AlignHCenter">
+     <widget class="QLabel" name="label_10">
+      <property name="styleSheet">
+       <string notr="true">font: 700 22pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Добавление работника</string>
+      </property>
+     </widget>
+    </item>
+    <item row="17" column="0" alignment="Qt::AlignmentFlag::AlignHCenter">
+     <widget class="QLabel" name="label_8">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CustomLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>addingworker.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
